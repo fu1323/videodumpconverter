@@ -1,3 +1,6 @@
+ps:完整分析和解密见https://github.com/fu1323/CCWASM  感谢chatgpt
+<br>
+<br>
 一个加密视频dump工具（.js文件通过原型链hook了appendbuffer方法 ，研究对象是央视直播 央视网，其采用了帧加密，
 用了一个基于hls.js魔改的视频播放器，解密会调用wasm，wasm严重混淆，还会验证用户环境，
 由于浏览器原生只支持fmp4，所以一定会有解密过后的明文数据出现，除非他不用硬件解码，放弃用户体验用canvas硬画。
